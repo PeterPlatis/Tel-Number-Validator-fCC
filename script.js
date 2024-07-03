@@ -2,12 +2,18 @@
 //time handling
 //
 const time = document.getElementById("time");
-const now = new Date();
-if(now.getMinutes() <= 9) {
-    time.innerHTML = `${now.getHours()}:0${now.getMinutes()}`;
-} else {
-    time.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
+function updateTime() {
+    const now = new Date();
+
+    if(now.getMinutes() <= 9) {
+        time.innerHTML = `${now.getHours()}:0${now.getMinutes()}`;
+    } else {
+        time.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
+    }
 }
+updateTime();
+setInterval(updateTime, 1000);
+
 
 //
 //numberpad handling
