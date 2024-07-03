@@ -2,6 +2,7 @@
 //time handling
 //
 const time = document.getElementById("time");
+
 function updateTime() {
     const now = new Date();
 
