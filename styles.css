@@ -139,7 +139,7 @@ body {
     height: fit-content;
     align-self: flex-start;
     justify-self: center;
-    width: 368px;
+    width: 321px;
     overflow-wrap: break-word;
     overflow: clip;
 }
@@ -229,7 +229,7 @@ body {
     background-color: hsl(133, 69%, 78%);
 }
 
-#clear {
+#clear-btn {
     grid-column:  3 / 4;
     width: 40px;
     height: 40px;

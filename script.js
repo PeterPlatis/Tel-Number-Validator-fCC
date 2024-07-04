@@ -21,7 +21,7 @@ setInterval(updateTime, 1000);
 //
 const output = document.getElementById("results-div");
 const input = document.getElementById("user-input");
-const clearButton = document.getElementById("clear");
+const clearButton = document.getElementById("clear-btn");
 
 const numbers = {};
 
@@ -57,8 +57,6 @@ function clearAll() {
 //
 const checkButton = document.getElementById("check-btn");
 
-
-
 checkButton.addEventListener("click", () => {    
     evaluate(input.value);
     }
@@ -69,10 +67,10 @@ function evaluate(string) {
         alert("Please provide a phone number");
         return
     } else if (isValid(string)) {
-        output.innerHTML = `Valid US number: <br>${input.value}`;
+        output.innerHTML = `Valid US number: ${input.value}`;
         clearInput();
     } else {
-        output.innerHTML = `Invalid US number: <br>${input.value}`;
+        output.innerHTML = `Invalid US number: ${input.value}`;
         clearInput();
     }
 }
